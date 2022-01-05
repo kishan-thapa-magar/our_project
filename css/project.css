@@ -1,0 +1,581 @@
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+#preloader {
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: +4;
+}
+
+#status {
+  background-image: url("../img/adfad.gif");
+  background-repeat: no-repeat;
+  background-size: 700px 400px;
+  position: absolute;
+  height: 400px;
+  width: 680px;
+  z-index: +4;
+  margin-left: 325px;
+  margin-top: 150px;
+}
+
+/*slider section start*/
+.slider_img {
+  margin-left: 18%;
+  width: 800px !important;
+  height: 450px !important;
+}
+.slider_title {
+  position: absolute;
+  left: 75px;
+  top: 40px;
+}
+.slider_title .gr7 {
+  color: blue;
+}
+.slider_title .rm {
+  color: red;
+}
+.slider_title .hj {
+  color: orangered;
+}
+.slider_title .tracker {
+  color: black;
+  transition: 0.5;
+}
+.slider_title .gr7:hover {
+  color: red;
+  border-left: 50px solid #fff;
+  opacity: 0.9;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.slider_title .rm:hover {
+  color: blue;
+  border-left: 50px solid #fff;
+  opacity: 0.9;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.slider_title .hj:hover {
+  color: black;
+  border-left: 50px solid #fff;
+  opacity: 0.9;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.slider_title .tracker:hover {
+  color: orangered;
+  border-left: 50px solid #fff;
+  opacity: 0.9;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.slider_btn {
+  width: 50px;
+}
+/*slider section end*/
+
+/*nav bar start*/
+.navi_1 {
+  background: white;
+  height: 60px;
+  position: sticky;
+  top: 0;
+  z-index: +1;
+  border-bottom:0.5px solid orangered;
+}
+.navi_1 ul {
+  float: left;
+}
+.ul_1 {
+  margin: 5px 20px 20px 20px;
+}
+.ul_3 {
+  margin: 15px 20px 20px 70px;
+}
+.navi_1 ul li {
+  list-style-type: none;
+  float: left;
+  margin-left:10px;
+}
+
+.navi_1 ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  font-size: 30px;
+  color: black;
+  padding: 5px 10px;
+  font-family: "Stick No Bills", sans-serif;
+  border-radius: 5px;
+}
+.ul_1 li:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+
+}
+.ul_1 li a:hover {
+  color: white;
+  background-color: orangered;
+}
+.book_drop{
+  float:none !important;
+  position:absolute;
+  width:150;
+  height:150px;
+  background-color: rgba(255, 73, 7, 0.9);
+  border-left:5px solid black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display:none; 
+}
+.book_drop li{
+  list-style-type:none;
+  display:inline-block;
+  margin-left:1px !important;
+  margin-top:10px;
+}
+.book_drop li a{
+  font-size: 20px !important;
+  color:white !important;
+}
+.book_drop li a:hover{
+  background-color:white;
+  border-left:15px solid black;
+  transition:0.5s;
+  color:orangered !important;
+}
+.book_down:hover .book_drop{
+  display: block;
+}
+
+.search-box {
+  position:absolute;
+  right:20px;
+  margin-top:3px;
+  transform: translate(0, -50%);
+  background-color: white;
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
+}
+.search-box:hover .search-txt  {
+    width: 350px;
+  }
+.search-btn:hover {
+    background-color: white;
+  }
+a {
+    text-decoration: none;}
+
+
+.search-btn {
+  color: orangered;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.1s;
+}
+
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding-left: 0;
+  color: black;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+}
+/*nav bar end*/
+
+.log_box {
+  background: white;
+  height: 150px;
+  box-shadow: 0 30px 50px black;
+}
+
+.arrows {
+  width: 60px;
+  height: 80px;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 35px;
+}
+
+.arrows path {
+  stroke: orangered;
+  fill: transparent;
+  stroke-width: 8px;
+  animation: arrow 3s infinite;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0;
+    stroke: red;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+    stroke: orange;
+  }
+  100% {
+    opacity: 0;
+    stroke: yellow;
+  }
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/ {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.arrows path.a1 {
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s; /* Safari 和 Chrome */
+}
+
+.primary_body {
+  background: linear-gradient(
+    40deg,orangered,orange,yellow, white);
+}
+
+/*start for booking*/
+.craft {
+  background-color: rgb(255, 255, 255);
+  margin: 50px;
+  height: 500px;
+  width: 1250px;
+  border: 5px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: 0 0 50px black;
+}
+.title_craft {
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.title_craft_1:hover {
+  border-left: 150px solid rgb(233, 233, 233);
+  transition: 0.5s;
+  color: blue;
+}
+.title_craft_2:hover {
+  border-left: 150px solid rgb(233, 233, 233);
+  transition: 0.5s;
+  color: red;
+}
+.title_craft_3:hover {
+  border-left: 150px solid rgb(233, 233, 233);
+  transition: 0.5s;
+  color: orangered;
+}
+.img_craft {
+  height: 300px;
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 50px;
+}
+.craft .craft_body {
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 675px;
+  margin-right: 75px;
+}
+.book_now {
+  position: absolute;
+  right: 75px;
+  margin-top: 400px;
+  background-color: orangered;
+  height: 75px;
+  width: 550px;
+  border: 5px;
+  border-bottom-right-radius: 30px;
+}
+.price {
+  color: white;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 50px;
+  font-family: "Scheherazade New", serif;
+  font-size: 40px;
+}
+.book_btn {
+  height: 30px;
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 390px;
+  border: 1px;
+  border-bottom-right-radius: 20px;
+  font-weight: bold;
+}
+.book_btn:hover {
+  transform: scale(0.9);
+}
+/*end for booking*/
+/*css begin for gallary*/
+#callgallary{
+  background-color:white;
+  height:750px;
+}
+.gallary_container{
+  position:absolute;
+  height:690px;
+  width:1290px;
+  margin:20px;
+  background-color: rgb(160, 148, 148);
+}
+.gallary{
+  position:relative;
+  text-align: center;
+}
+.gallary input{
+  display:none;
+}
+.our_gallary{
+  background-color: orchid;
+ 
+}
+.our_gallary h1{
+    font-weight: normal;
+    margin:20px 0px;
+    height:75px;
+}
+h1::before{
+  content:'';
+  height:3px;
+  width:100px;
+  position:absolute;
+  background-color: red;
+  bottom:-15px;
+  left:50%;
+
+}
+.top_container h3{
+  position: relative;
+
+}
+
+
+/*css begin for staytune*/
+.stay_tune{
+  background: white;
+  height: 700px;
+  width: 1000px;
+  margin-top:50px;
+  margin-left:200px;
+  margin-bottom:50px;
+  border-radius: 50px;
+  box-shadow: 0 0 50px black;
+}
+.cnt {
+  background-color: black;
+  color: white;
+  margin-left: 25px;
+  border-radius: 10px;
+  width: 95%;
+}
+.staytune_form {
+  margin-top: 50px;
+  margin-left: 320px;
+  margin-bottom: 40px;
+  width: 350px;
+}
+.staytune {
+  margin: 15px;
+}
+.info_staytune {
+  color: black;
+}
+.mathiko_btn {
+  width: 130px;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 25px;
+  border: none;
+  box-shadow: 0 0 5px black;
+  font-weight: bold;
+  color: orangered;
+}
+.mathiko_btn:hover {
+  color: white;
+  background-color: orangered;
+  transition: 0.5s;
+}
+.text_area {
+  height: 100px !important;
+  width: 500px;
+  margin-top: 50px;
+  margin-left:320px;
+  border: 1px solid black;
+  border-radius: 25px;
+}
+.feedback h1 {
+  background-color: black;
+  width: 95%;
+  border-radius: 10px;
+  margin-left: 25px;
+}
+.feedback_btn {
+  width: 130px;
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 320px;
+  border-radius: 25px;
+  border: none;
+  box-shadow: 0 0 5px black;
+  font-weight: bold;
+  color: orangered;
+}
+.feedback_btn:hover {
+  color: white;
+  background-color: orangered;
+  transition: 0.5s;
+}
+
+/*css begin for media*/
+.media {
+  background-color: white;
+  height: 350px;
+}
+.box_media {
+  position: absolute;
+  margin-top: 25px;
+  margin-left: 282px;
+}
+.col {
+  margin: 50px;
+  box-shadow: 0 110px 30px 2px black;
+  height: 5px;
+}
+.col:hover {
+  border-radius: 50%;
+}
+.face_book:hover {
+  color: blue;
+  transform: scale(1.1);
+  transform: translateY(-10px);
+  transition: 0.3s;
+}
+.twit_ter:hover {
+  color: rgb(0, 153, 255);
+  transform: scale(1.1);
+  transform: translateY(-10px);
+  transition: 0.5s;
+}
+.insta_gram:hover {
+  color: rgb(248, 0, 103);
+  transform: scale(1.1);
+  transform: translateY(-10px);
+  transition: 0.5s;
+}
+.you_tube:hover {
+  color: red;
+  transform: scale(1.1);
+  transform: translateY(-10px);
+  transition: 0.5s;
+}
+.text_media_1{
+  position:absolute;
+  margin-top:250px;
+  margin-left:200px;
+  background-color:black;
+  height:35px;
+  width:500px;
+  border-radius:20px;
+}
+
+.text_media_2{
+  position:absolute;
+  margin-top:290px;
+  right:250px;
+  background-color:black;
+  height:35px;
+  width:600px;
+  border-radius:20px;
+}
+.text_media_first_p{
+  word-spacing:10px;
+  margin-top:4px;
+  text-align: center;
+  color:white;
+}
+.text_media_second_p{
+  word-spacing:10px;
+  color:white;
+  margin-top:4px;
+  text-align: center;
+}
+
+.text_media_second_p span{
+  color:orangered;
+}
+/*css begin for footer */
+footer{ 
+  height: 558px;
+  margin-top:10px;
+  background-color: rgba(28, 61, 80, 0.9);
+}
+.map{
+  position:absolute;
+  margin-top:50px;
+  left:50px;
+  width:600px;
+}
+.contact{
+  position:absolute;
+  margin-top:50px;
+  right:50px;
+
+  height:458px;
+  width:600px;
+}
+.detail{
+  color:white;
+  margin:50px 20px 20px 75px;
+}
+.contact_head{
+  margin-bottom:15px;
+}
