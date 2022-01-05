@@ -358,14 +358,21 @@ a {
 /*css begin for gallary*/
 #callgallary{
   background-color:white;
-  height:750px;
+  height:1000px;
 }
 .gallary_container{
   position:absolute;
-  height:690px;
+  height:950px;
   width:1290px;
   margin:20px;
   background-color: rgb(160, 148, 148);
+}
+.outer_border{
+  margin:5px;
+  height:680px;
+  width:1280px;
+  border:1px solid black;
+  z-index:2;
 }
 .gallary{
   position:relative;
@@ -374,30 +381,100 @@ a {
 .gallary input{
   display:none;
 }
-.our_gallary{
-  background-color: orchid;
- 
-}
+
 .our_gallary h1{
+  position: relative;
     font-weight: normal;
     margin:20px 0px;
     height:75px;
-}
-h1::before{
-  content:'';
-  height:3px;
-  width:100px;
-  position:absolute;
-  background-color: red;
-  bottom:-15px;
-  left:50%;
 
+}
+.our_gallary h1::before{
+  content:"";
+  position:absolute;
+  height:5px;
+  width:500px;
+  background-color:orangered;
+  bottom:5px;
+  margin-left:150px;
+  transform:translateX(-50%);
+  animation:ktm 3s linear infinite;
+}
+
+@keyframes ktm {
+  0%{
+    width:0px;
+  }
+  50%{
+    width:300px;
+  } 
+  100%{
+    width:0px;
+  }
+  
+}
+
+.top_container {
+  background-color:black;
+  width:1260px;
+  margin:0px auto 20px auto;
+  height:55px;
+  display:flex;
+  align-items: center;
+  border-radius:5px;
+  box-shadow: 3px 3px 5px rgb(136, 136, 136);
 }
 .top_container h3{
-  position: relative;
-
+  margin:0px 250px 0px 100px;
+  color:white;
 }
 
+.top_container label{
+  margin:0px 20px;
+  color:white;
+}
+.top_container label:hover{
+  transform: scale(1.5);
+}
+.img_container{
+  width:1260px;
+  margin:auto;
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap:20px;
+}
+.photo{
+  position:relative;
+  height:230px;
+  border-radius:10px;
+  box-shadow: 3px 3px 5px lightgray;
+}
+.photo img{
+  height:100%;
+  width:100%;
+  border-radius:10px;
+}
+#check:checked ~ .img_container .photo{
+  transform:scale(1.02);
+  opacity:1;
+  position:relative;
+}
+#check1:checked ~ .img_container .gr{
+  transform:scale(1.02);
+  opacity:1;
+  position:relative;
+}
+
+#check2:checked ~ .img_container .RM{
+    transform:scale(1.02);
+    opacity:1;
+    position:relative;
+  }
+#check3:checked ~ .img_container .HJ{
+  transform:scale(1.02);
+  opacity:1;
+  position:relative;
+}
 
 /*css begin for staytune*/
 .stay_tune{
