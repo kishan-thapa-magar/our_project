@@ -358,18 +358,18 @@ a {
 /*css begin for gallary*/
 #callgallary{
   background-color:white;
-  height:1000px;
+  height:750px;
 }
 .gallary_container{
   position:absolute;
-  height:950px;
+  height:720px;
   width:1290px;
   margin:20px;
   background-color: rgb(160, 148, 148);
 }
 .outer_border{
   margin:5px;
-  height:680px;
+  height:700px;
   width:1280px;
   border:1px solid black;
   z-index:2;
@@ -440,13 +440,17 @@ a {
   width:1260px;
   margin:auto;
   display:grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4,2fr);
   grid-gap:20px;
+  height:500px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 .photo{
   position:relative;
   height:230px;
   border-radius:10px;
+  display:none;
   box-shadow: 3px 3px 5px lightgray;
 }
 .photo img{
@@ -463,15 +467,18 @@ a {
   transform:scale(1.02);
   opacity:1;
   position:relative;
+  display:block;
 }
 
 #check2:checked ~ .img_container .RM{
     transform:scale(1.02);
     opacity:1;
     position:relative;
+    display:block;
   }
 #check3:checked ~ .img_container .HJ{
   transform:scale(1.02);
+  display:block;
   opacity:1;
   position:relative;
 }
